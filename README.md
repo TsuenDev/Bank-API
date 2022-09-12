@@ -40,7 +40,19 @@ Run the project
 npm run start
 ```
 
-Access the router through POSTMAN
+Open the project on localhost
 ```bash
-http://localhost:8080/transaction
+http://localhost:8080/
+```
+
+## End Points
+
+[GET] Path to access to transactions
+```bash
+http://localhost:8080/transactions
+```
+
+[POST] Path to create transactions
+```bash
+http://localhost:8080/transactions
 ```
