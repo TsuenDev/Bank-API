@@ -6,10 +6,9 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use(require('./routes/transactions'));
+app.use(require('./routes/routes'));
 
 // Server
 app.listen(PORT, () => {
  console.log(`Listening on PORT ${PORT}`);
 });
-
