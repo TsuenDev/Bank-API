@@ -1,7 +1,7 @@
 const dbConnection = require("../database/database");
 
-//constructor
-const Transaction = (transaction) => {
+//Define constructor
+const Transaction = function(transaction) {
   this.trans_date = transaction.trans_date;
   this.amount = transaction.amount;
   this.balance = transaction.balance;

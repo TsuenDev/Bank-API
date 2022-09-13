@@ -9,11 +9,16 @@ create = (req, res) => {
     });
   }
 
+  //Get current time
+  var currentDate = new Date().toLocaleString;
+  currentDate.toLocaleString
+
   //Create a Transaction
   const transaction = new Transaction({
-    trans_date: req.body.trans_date,
+    trans_date: currentDate,
     amount: req.body.amount,
-    balance: req.body.balance,
+    //**Need to get the last query inserted balance, and recalculate de new one, set 1000 as default at the moment
+    balance: req.body.balance || 1000,
   });
 
   //Save Transaction in db
